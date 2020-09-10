@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jira Board for Dummies</title>
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    
 </head>
 <body>
 <!-----Area to input title of Board---->
@@ -22,18 +24,20 @@
     </table>
 </div>
 <!-------Staging/submitted tasks Board------->
-<div id="container">
-    <div class="input">random text: <textarea id="message" placeholder='type your idea here'></textarea>
+<table id="display">
+    <tr> 
+      <th>Submitted tasks/ideas</th>
+    </tr>
+ </table>
+<!----Free text area for user to submit info----->
+ <div id="container">
+    <div id="messageDiv" class="input">random text: <textarea id="message" placeholder='type your idea here'></textarea>
     </div>
 
     <button id="entry">Input entry</button>
 </div>
-<table id="display">
-   <tr> 
-     <th>Submitted tasks/ideas</th>
-   </tr>
-</table>
-<!----Free text area for user to submit info----->
+
+
 <script src="script.js"></script>
 </body>
 </html>

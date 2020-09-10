@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jira Board for Dummies</title>
-    <script>
-        function check()
-        {
-           //document.writeln('Hi '+document.myform.name.value);
-           document.getElementById('f1').innerHTML = document.submitBox.message.value;
-        }
-        
-    </script>
 </head>
 <body>
 <!-----Area to input title of Board---->
@@ -19,7 +11,7 @@
     <input type="text" name="boardTitle" placeholder="Enter your board name here">
 </div>
 <!------Main board of approved requests---->
-<table id="display">
+<table id="other">
     <table>
         <thead>
             
@@ -30,22 +22,18 @@
     </table>
 </div>
 <!-------Staging/submitted tasks Board------->
-<table>
+<div id="container">
+    <div class="input">random text: <textarea id="message" placeholder='type your idea here'></textarea>
+    </div>
+
+    <button id="entry">Input entry</button>
+</div>
+<table id="display">
    <tr> 
      <th>Submitted tasks/ideas</th>
    </tr>
-   <tr>
-     <td><p id='f1'>fghfhfghfgh</p></td>
-   </tr>
 </table>
 <!----Free text area for user to submit info----->
-<form name="submitBox"></forn>
-<div>
-    <label>Message</label>
-    <textarea name="message" placeholder='type your idea here'></textarea>
-</div>
-<!-----Submit Button which places info in free text field onto the Staging Board----->
-<p><input type = 'submit' onclick='check(); return false'></p>
-</form>
+<script src="script.js"></script>
 </body>
 </html>

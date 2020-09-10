@@ -17,12 +17,13 @@ html {
 }
 
 .input {
+    
     font-size: 25px;
     color: #004d00;
-    font-weight: 700;
-    font-family: cursive;
-    margin: 20px
-;}
+    font-weight: 00;
+    font-family: "comic sans MS", cursive, sans-serif;
+    margin: 20px;
+}
 
 #entry {
     width: 150px;
@@ -39,7 +40,7 @@ table {
   border-collapse: collapse;
   width: 50%;
   margin: 50px auto;
-  background-color: burlywood;  
+  background-color: rgb(207, 198, 185);  
 }
 
 table, th, td {
@@ -56,7 +57,7 @@ table, th, td {
 
     td {
         font-size: 25px;
-        color: crimson;
+        color: rgb(73, 72, 72);
         font-weight: 400;
         font-family: Georgia;
     }
